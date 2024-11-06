@@ -1,0 +1,476 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    background: linear-gradient(to bottom, #011526 0%, #012E40 84%);
+    ;
+    color: #ECECEC;
+}
+
+
+.nav-underline {
+    margin-top: 3%;
+    width: 100%;
+    height: 0.6px; /* Set the thickness to 0.6px */
+    background-color: #607882; /* Set the color to #607882 */
+    position: absolute;
+    top: 5%; /* Positioned right under the navbar */
+    opacity: 0.5; /* Pass through layer effect */
+    z-index: -1; /* Ensure it is behind other content */
+}
+.nav-underline-apropos{
+
+    width: 100%;
+    height: 0.6px; /* Set the thickness to 0.6px */
+    background-color: #e9ebec; /* Set the color to #607882 */
+    position: absolute;
+    /* top: 60px; Positioned right under the navbar */
+    opacity: 0.5; /* Pass through layer effect */
+    z-index: -1; 
+}
+
+.container {
+    width: 100%;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    display: flex;
+}
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+    width: 2%; /* Width of the sidebar */
+    background-color: #607882; /* Grey bar on the left */
+    height: 100%; /* Full height of the viewport */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed; /* Sidebar stays fixed on the left */
+    top: 0; /* Start from the top */
+    left: 0; /* Align to the left */
+}
+
+
+#logo {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 36px;
+    color: #B5C0C4; /* Logo color */
+    position: absolute; /* Positioning the logo absolutely */
+    left: 5%; /* Align the logo to the left side of the page */
+    top: 3%;
+}
+
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Navigation */
+.nav-bar {
+    margin-top: 1%;
+
+ position: absolute;
+ top: 3%;
+ right: 5%;
+}
+
+.nav-bar a {
+ 
+ margin-left: 80px;
+ font-family: 'Akshar', sans-serif;
+ color: #B5C0C4; /* Navbar color */
+ text-decoration: none;
+ font-size:24px;
+ letter-spacing: 1px;
+}
+
+.nav-bar a:hover {
+ color: #aaa;
+}
+
+
+/* Line below the navbar */
+.nav-underline {
+    width: 100%;
+    height: 1px;
+    background-color: #B5C0C4;
+    position: absolute;
+    top: 8%; /* Positioned right under the navbar */
+}
+
+/* Introduction section */
+.intro-section {
+    text-align: center;
+    margin-top: -8%;
+    margin-right: 25%; /* Ajuste la valeur selon le positionnement souhaité */
+}
+
+h1 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 48px;
+    color: #B5C0C4; /* Color for "Bonjour je suis" */
+    margin-right: 190px; /* Adjust to move the welcome text upwards */
+}
+
+h2 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 1200; /* Bold */
+    font-size: 64px;
+    color: #607882; /* Color for "Oussama Ben Haj" */
+}
+
+h3 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 48px;
+    color: #B5C0C4; /* Color for "Back End Developer" */
+    margin-left: 70px; /* Adjust to move the welcome text upwards */
+}
+
+/* Scroll down */
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+.scroll-down p {
+    font-family: 'Mohave', sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.arrow {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.apropos {
+text-align: center;
+padding-top: 10%;
+
+}
+.apropos{
+    color: #FAFAFA;
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600; /* Bold */
+    font-size: 40px;
+    width: 100vw;
+
+}
+.text-propos {
+    width: 85vw;
+
+    margin-top: 3%;
+    margin-left: 17%;
+    padding-right: 16%;
+    text-align: justify; /* Justifier le texte */
+    line-height: 1.6; /* Interligne par défaut de 1.6 */
+    margin-bottom: 9%;
+}
+
+
+.gallery {
+    margin-top: 40px;
+margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-item {
+    width: 33%; /* Chaque image prend 30% de la largeur de la ligne */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.image-item h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 1200; /* SemiBold */
+
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 300; /* SemiBold */
+
+
+}
+.random-box {
+    position: relative;
+    width: 900px; /* Taille du carré */
+    height: 400px;
+}
+
+/* Taille réduite des images */
+.random-position {
+    position: absolute;
+    width: 50px; /* Taille réduite des images */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+/* Positionnement aléatoire des images */
+.random-position:nth-child(1) {
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 70px;
+}
+
+.random-position:nth-child(2) {
+    top: 200px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+}
+
+.random-position:nth-child(3) {
+    top: 40px;
+    left: 800px;
+    width: 70px;
+    height: 70px;
+}
+
+.random-position:nth-child(4) {
+    top: 230px;
+    left: 710px;
+    width: 90px;
+    height: 90px;
+}
+
+.random-position:nth-child(5) {
+    top: 70px;
+    left: 600px;
+    width: 130px;
+    height: 130px;
+}
+
+.random-position:nth-child(6) {
+    top: 170px;
+    left: 500px;
+    width: 60px;
+    height: 60px;
+}
+
+.random-position:nth-child(7) {
+    top: 180px;
+    left: 350px;
+    width: 70px;
+    height: 70px;
+}
+
+.random-position:nth-child(8) {
+    top: 80px;
+    left: 190px;
+    width: 120px;
+    height: 100px;
+}
+
+.random-position:nth-child(9) {
+    top: 50px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+}
+.random-position:nth-child(10) {
+    top: 260px;
+    left: 550px;
+    width: 160px;
+    height: 100px;
+}.random-position:nth-child(11) {
+    top: 300px;
+    left: 380px;
+    width: 60px;
+    height: 60px;
+}.random-position:nth-child(12) {
+    top: 250px;
+    left: 160px;
+    width: 130px;
+    height: 60px;
+}
+
+
+.liste {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-between; /* Distribue les éléments avec de l'espace entre eux */
+}
+
+.item {
+    padding: 90px;
+    margin-bottom: 10px;
+    width: 25%;
+    text-align: center; /* Ajuste la largeur pour que 4 éléments tiennent sur une ligne avec un espace entre eux */
+}
+
+.item h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.item p {
+    font-size: 16px;
+}
+
+.item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Animation de base pour une transition fluide */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation pour le logo */
+#logo {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les liens de navigation */
+.nav-bar a {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-bar a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-bar a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #B5C0C4;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+/* Animation pour le texte d'introduction */
+.intro-section h1, .intro-section h2, .intro-section h3 {
+    animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour la flèche de défilement */
+.scroll-down .arrow {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Animation pour les images dans la galerie */
+.image-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation pour les images aléatoires */
+.random-position {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les éléments de contact */
+.item {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Grossissement au survol */
+}

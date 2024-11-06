@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    background: linear-gradient(to bottom, #011526 0%, #012E40 84%);
+    ;
+    color: #ECECEC;
+}
+.underline {
+
+    margin-bottom:90px;
+    width: 100%;
+    height: 0.6px; /* Set the thickness to 0.6px */
+    background-color: #607882; /* Set the color to #607882 */
+    position: absolute;
+    opacity: 0.5; /* Pass through layer effect */
+    z-index: -1; /* Ensure it is behind other content */
+}
+/* Line below the navbar */
+
+
+.container {
+    width: 100%;
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 15px; /* Adjusted width for the sidebar */
+    background-color: #607882; /* Grey bar on the left */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 36px;
+    color: #B5C0C4; /* Logo color */
+    position: absolute; /* Positioning the logo absolutely */
+    left: 60px; /* Align the logo to the left side of the page */
+    top: 30px;
+}
+
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation */
+.nav-bar {
+       margin-top: 15px;
+
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.nav-bar a {
+    
+    margin-left: 80px;
+    font-family: 'Akshar', sans-serif;
+    color: #B5C0C4; /* Navbar color */
+    text-decoration: none;
+    font-size:24px;
+    letter-spacing: 1px;
+}
+
+.nav-bar a:hover {
+    color: #aaa;
+}
+
+
+.nav-underline {
+    margin-top: 40px;
+    width:100%;
+    height: 0.6px; /* Set the thickness to 0.6px */
+    background-color: #B5C0C4; /* Set the color to #607882 */
+    position: absolute;
+    top: 60px; /* Positioned right under the navbar */
+    opacity: 0.5; /* Pass through layer effect */
+    z-index: -1; /* Ensure it is behind other content */
+}
+
+/* Introduction section */
+.intro-section {
+    text-align: center;
+}
+h1 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 1200; /* SemiBold */
+    font-size: 64px;
+    color: #FAFAFA; /* Color for "Bonjour je suis" */
+    margin-right:380px; /* Adjust to move the welcome text upwards */
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.project-description{
+    
+    font-size: 16px;
+    color: #FAFAFA; /* Color for "Bonjour je suis" */
+    margin-left:70px; /* Adjust to move the welcome text upwards */
+    text-align: left;
+    margin-right: 31%;
+}
+
+.project-info{
+    margin-left:75%;
+    margin-top: -70px;
+    margin-right: 5%;
+
+}
+.sidebar {
+    width: 15px; /* Width of the sidebar */
+    background-color: #607882; /* Grey bar on the left */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed; /* Sidebar stays fixed on the left */
+    top: 0; /* Start from the top */
+    left: 0; /* Align to the left */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    margin-top: -100px;
+
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 500px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: white;
+}
+
+.gallery {
+    margin-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-item {
+    width: 33%; /* Chaque image prend 30% de la largeur de la ligne */
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.image-item h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 1200; /* SemiBold */
+
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 300; /* SemiBold */
+
+
+}
+
+.section-container{
+    margin-top: 100px;
+
+}
+
+#logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.2); /* Agrandit le logo */
+}
+
+
+.nav-bar a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-bar a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #B5C0C4;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-bar a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+ 
